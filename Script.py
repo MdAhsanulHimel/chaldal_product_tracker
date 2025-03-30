@@ -1,18 +1,42 @@
+import csv
+import os
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+CSV_FILE = "chaldal_products.csv"
+
+def load_urls_from_csv(file_path="product_urls.csv"):
+    if not os.path.exists(file_path):
+        print("URL list file not found!")
+        return []
+    
+    with open(file_path, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        return [row["URL"].strip() for row in reader if row["URL"].strip()]
+
+
 def init_browser():
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
+    options.add_argument("--blink-settings=imagesEnabled=false")
+
+    prefs = {
+        "profile.managed_default_content_settings.images": 2,
+        "profile.default_content_setting_values.notifications": 2,
+        "profile.managed_default_content_settings.stylesheets": 2,
+    }
+    options.add_experimental_option("prefs", prefs)
+
     return webdriver.Chrome(options=options)
 
 def get_title_and_size(browser):
     try:
-        wrapper = WebDriverWait(browser, 10).until(
+        wrapper = WebDriverWait(browser, 5).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, 'div.nameAndSubtext'))
         )
         title = wrapper.find_element(By.CSS_SELECTOR, 'h1[itemprop="name"]').text.strip()
@@ -21,9 +45,9 @@ def get_title_and_size(browser):
     except:
         return "Title not found", "Size not found"
 
-def get_product_price(url, browser):
+def get_product_price(browser):
     try:
-        price_element = WebDriverWait(browser, 10).until(
+        price_element = WebDriverWait(browser, 5).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, 'span[itemprop="price"]'))
         )
         return price_element.get_attribute("content").strip()
@@ -32,7 +56,7 @@ def get_product_price(url, browser):
 
 def get_full_price(browser):
     try:
-        full_price_element = WebDriverWait(browser, 10).until(
+        full_price_element = WebDriverWait(browser, 5).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, 'div.fullPrice span:last-child'))
         )
         return full_price_element.text.strip()
@@ -46,28 +70,58 @@ def get_discount_info(browser):
     except:
         return "No discount"
 
-def get_all_product_info(url):
-    browser = init_browser()
+def get_all_product_info(browser, url):
     browser.get(url)
-
-    title, pack_size = get_title_and_size(browser)
-    price = get_product_price(url, browser)
-    full_price = get_full_price(browser)
+    title, size = get_title_and_size(browser)
+    current_price = get_product_price(browser)
+    original_price = get_full_price(browser)
     discount = get_discount_info(browser)
-
-    browser.quit()
-
+    timestamp = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
     return {
+        "URL": url,
         "Title": title,
-        "Current Price": price,
-        "Pack Size": pack_size,
-        "Original Price": full_price,
-        "Discount": discount
+        "Pack Size": size,
+        "Current Price": current_price,
+        "Original Price": original_price,
+        "Discount": discount,
+        "LastUpdated": timestamp
     }
 
-# Example usage
-url = "https://chaldal.com/radhuni-chotpoti-masala-special-offer-50-gm"
-product_info = get_all_product_info(url)
+def load_existing_data():
+    if not os.path.exists(CSV_FILE):
+        return []
+    with open(CSV_FILE, newline='', encoding='utf-8') as f:
+        return list(csv.DictReader(f))
 
-for key, value in product_info.items():
-    print(f"{key}: {value}")
+def append_row(row):
+    file_exists = os.path.exists(CSV_FILE)
+    with open(CSV_FILE, 'a', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=["URL", "Title", "Pack Size", "Current Price", "Original Price", "Discount", "LastUpdated"])
+        if not file_exists:
+            writer.writeheader()
+        writer.writerow(row)
+
+def main():
+    browser = init_browser()
+    existing_data = load_existing_data()
+
+    urls = load_urls_from_csv()
+    for url in urls:
+        print(f"Fetching: {url}")
+        new_entry = get_all_product_info(browser, url)
+
+        # Check if URL already exists
+        previous_prices = [row for row in existing_data if row["URL"] == url]
+        latest_entry = previous_prices[-1] if previous_prices else None
+
+        if not latest_entry or latest_entry["Current Price"] != new_entry["Current Price"]:
+            print(f"New price or product detected. Appending to CSV.")
+            append_row(new_entry)
+        else:
+            print(f"No price change for: {new_entry['Title']}")
+
+    browser.quit()
+    print("Done ✅")
+
+if __name__ == "__main__":
+    main()
