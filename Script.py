@@ -73,16 +73,21 @@ def get_discount_info(browser):
 def get_all_product_info(browser, url):
     browser.get(url)
     title, size = get_title_and_size(browser)
-    current_price = get_product_price(browser)
-    original_price = get_full_price(browser)
+    selling_price = get_product_price(browser)
+    mrp = get_full_price(browser)
+
+    if mrp == "Full price not found" or not mrp.isdigit():
+        mrp = selling_price  # Fallback to selling price
+
     discount = get_discount_info(browser)
     timestamp = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
+
     return {
         "URL": url,
         "Title": title,
         "Pack Size": size,
-        "Current Price": current_price,
-        "Original Price": original_price,
+        "Selling Price": selling_price,
+        "MRP": mrp,
         "Discount": discount,
         "LastUpdated": timestamp
     }
@@ -96,7 +101,7 @@ def load_existing_data():
 def append_row(row):
     file_exists = os.path.exists(CSV_FILE)
     with open(CSV_FILE, 'a', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=["URL", "Title", "Pack Size", "Current Price", "Original Price", "Discount", "LastUpdated"])
+        writer = csv.DictWriter(f, fieldnames=["URL", "Title", "Pack Size", "Selling Price", "MRP", "Discount", "LastUpdated"])
         if not file_exists:
             writer.writeheader()
         writer.writerow(row)
