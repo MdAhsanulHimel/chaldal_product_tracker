@@ -13,7 +13,7 @@ from tkinter import messagebox
 
 # File and folder paths
 EXCEL_FILE = "Popular products tracking in Chaldal.xlsx"
-CHANGE_LOG_DIR = "change_log_popular"
+CHANGE_LOG_DIR = "change_log_popular_products"
 os.makedirs(CHANGE_LOG_DIR, exist_ok=True)
 LOG_FILE = os.path.join(CHANGE_LOG_DIR, f"{datetime.now().strftime('%Y-%m-%d')}.txt")
 
