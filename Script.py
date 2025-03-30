@@ -1,7 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 def init_browser():
     options = Options()
@@ -12,10 +13,11 @@ def init_browser():
 def get_product_title(url):
     browser = init_browser()
     browser.get(url)
-    time.sleep(3)
 
     try:
-        title_element = browser.find_element(By.CSS_SELECTOR, 'h1[itemprop="name"]')
+        title_element = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'h1[itemprop="name"]'))
+        )
         title = title_element.text.strip()
     except:
         title = "Title not found"
@@ -26,10 +28,11 @@ def get_product_title(url):
 def get_product_price(url):
     browser = init_browser()
     browser.get(url)
-    time.sleep(3)
 
     try:
-        price_element = browser.find_element(By.CSS_SELECTOR, 'span[itemprop="price"]')
+        price_element = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'span[itemprop="price"]'))
+        )
         price = price_element.get_attribute("content").strip()
     except:
         price = "Price not found"
