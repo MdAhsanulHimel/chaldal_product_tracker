@@ -10,37 +10,64 @@ def init_browser():
     options.add_argument("--disable-gpu")
     return webdriver.Chrome(options=options)
 
-def get_product_title(url):
-    browser = init_browser()
-    browser.get(url)
-
+def get_title_and_size(browser):
     try:
-        title_element = WebDriverWait(browser, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'h1[itemprop="name"]'))
+        wrapper = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.nameAndSubtext'))
         )
-        title = title_element.text.strip()
+        title = wrapper.find_element(By.CSS_SELECTOR, 'h1[itemprop="name"]').text.strip()
+        size = wrapper.find_element(By.CSS_SELECTOR, 'span').text.strip()
+        return title, size
     except:
-        title = "Title not found"
+        return "Title not found", "Size not found"
 
-    browser.quit()
-    return title
-
-def get_product_price(url):
-    browser = init_browser()
-    browser.get(url)
-
+def get_product_price(url, browser):
     try:
         price_element = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, 'span[itemprop="price"]'))
         )
-        price = price_element.get_attribute("content").strip()
+        return price_element.get_attribute("content").strip()
     except:
-        price = "Price not found"
+        return "Price not found"
+
+def get_full_price(browser):
+    try:
+        full_price_element = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.fullPrice span:last-child'))
+        )
+        return full_price_element.text.strip()
+    except:
+        return "Full price not found"
+
+def get_discount_info(browser):
+    try:
+        discount_element = browser.find_element(By.CSS_SELECTOR, 'div.discount span')
+        return discount_element.text.strip()
+    except:
+        return "No discount"
+
+def get_all_product_info(url):
+    browser = init_browser()
+    browser.get(url)
+
+    title, pack_size = get_title_and_size(browser)
+    price = get_product_price(url, browser)
+    full_price = get_full_price(browser)
+    discount = get_discount_info(browser)
 
     browser.quit()
-    return price
+
+    return {
+        "Title": title,
+        "Current Price": price,
+        "Pack Size": pack_size,
+        "Original Price": full_price,
+        "Discount": discount
+    }
 
 # Example usage
 url = "https://chaldal.com/radhuni-chotpoti-masala-special-offer-50-gm"
-print("Title:", get_product_title(url))
-print("Price:", get_product_price(url))
+product_info = get_all_product_info(url)
+
+for key, value in product_info.items():
+    print(f"{key}: {value}")
