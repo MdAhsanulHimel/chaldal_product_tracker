@@ -8,6 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from plyer import notification
+import tkinter as tk
+from tkinter import messagebox
 
 # File and folder paths
 EXCEL_FILE = "Popular products tracking in Chaldal.xlsx"
@@ -40,7 +42,8 @@ def scrape_popular_products(url="https://chaldal.com/popular"):
     
     Returns:
         List of dictionaries with keys:
-          "SKU Name", "Pack Size", "MRP", "Selling Price", "Product URL", "LastUpdated", "Discount"
+          "SKU Name", "Pack Size", "MRP", "Selling Price", "Discount",
+          "Product URL", "LastUpdated"
     """
     browser = launch_browser()
     browser.get(url)
@@ -146,16 +149,36 @@ def log_change_block(block_lines):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(block_text)
 
+def show_summary_dialog(new_count, price_change_count):
+    """Displays a tkinter dialog summarizing the changes."""
+    total_changes = new_count + price_change_count
+    summary_message = (
+        f"Total changes: {total_changes}\n"
+        f"New products added: {new_count}\n"
+        f"Products with price change: {price_change_count}\n\n"
+        f"Please refer to the log file at:\n{os.path.abspath(CHANGE_LOG_DIR)}"
+    )
+    root = tk.Tk()
+    root.withdraw()  # hide the main window
+    messagebox.showinfo("Popular Products Update Summary", summary_message)
+    root.destroy()
+
 def update_excel_and_log(scraped_products):
     """
     Compares scraped products with existing Excel data.
     For each product, if it is new or its Selling Price differs from the last recorded price,
     appends the new entry and logs the change.
-    The final Excel file is sorted in ascending order of SKU Name.
+    The final Excel file is sorted in ascending order of SKU Name and LastUpdated.
+    
+    Returns:
+        tuple: (new_count, price_change_count)
     """
     df_existing = load_excel_data()
     new_entries = []
     log_blocks = []
+    
+    new_count = 0
+    price_change_count = 0
 
     for product in scraped_products:
         sku = product["SKU Name"]
@@ -163,6 +186,7 @@ def update_excel_and_log(scraped_products):
         if df_sku.empty:
             # New product
             new_entries.append(product)
+            new_count += 1
             block = [
                 f"SKU Name: {product['SKU Name']}",
                 f"Pack Size: {product['Pack Size']}",
@@ -179,6 +203,7 @@ def update_excel_and_log(scraped_products):
             last_record = df_sku_sorted.iloc[-1]
             if last_record["Selling Price"] != product["Selling Price"]:
                 new_entries.append(product)
+                price_change_count += 1
                 notify_price_change(product["SKU Name"], last_record["Selling Price"], product["Selling Price"])
                 block = [
                     f"SKU Name: {product['SKU Name']}",
@@ -199,6 +224,7 @@ def update_excel_and_log(scraped_products):
             df_updated = df_new.copy()
         else:
             df_updated = pd.concat([df_existing, df_new], ignore_index=True)
+        # Sort by SKU Name ascending and LastUpdated descending (latest first)
         df_updated.sort_values(by=["SKU Name", "LastUpdated"], ascending=[True, False], inplace=True)
         df_updated.to_excel(EXCEL_FILE, index=False)
 
@@ -206,10 +232,15 @@ def update_excel_and_log(scraped_products):
             log_change_block(block)
     else:
         print("No new entries or price changes.")
+    
+    return new_count, price_change_count
 
 def main():
     scraped_products = scrape_popular_products()
-    update_excel_and_log(scraped_products)
+    new_count, price_change_count = update_excel_and_log(scraped_products)
+    # If any changes were made, show a summary dialog
+    if new_count > 0 or price_change_count > 0:
+        show_summary_dialog(new_count, price_change_count)
 
 if __name__ == "__main__":
     main()
