@@ -181,8 +181,8 @@ def update_excel_and_log(scraped_products):
     price_change_count = 0
 
     for product in scraped_products:
-        sku = product["SKU Name"]
-        df_sku = df_existing[df_existing["SKU Name"] == sku]
+        url = product["Product URL"]
+        df_sku = df_existing[df_existing["Product URL"] == url]
         if df_sku.empty:
             # New product
             new_entries.append(product)
