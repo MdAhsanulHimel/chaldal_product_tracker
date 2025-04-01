@@ -12,7 +12,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 # File and folder paths
-EXCEL_FILE = "Selected Products Tracking.xlsx"
+EXCEL_FILE = "Tracking selected products.xlsx"
 LOG_DIR = "change_log_selected_products"
 os.makedirs(LOG_DIR, exist_ok=True)
 LOG_FILE = os.path.join(LOG_DIR, f"{datetime.now().strftime('%Y-%m-%d')}.txt")
