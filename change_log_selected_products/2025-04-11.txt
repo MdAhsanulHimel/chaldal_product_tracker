@@ -1,0 +1,34 @@
+SKU Name: Chicken Eggs (Layer)
+Pack Size: 12 pcs
+MRP: 130.0
+Selling Price: 125.0
+Discount: 0.04
+Product URL: https://chaldal.com/tatka-egg-pack-12-pcs
+LastUpdated: 2025-04-11
+Previous prices:
+2025-04-01: 129
+2025-03-31: 125
+
+===========
+SKU Name: Lal Peyaj (Onion Red Imported) ± 50 gm
+Pack Size: 1 kg
+MRP: 65.0
+Selling Price: 59.0
+Discount: 0.09
+Product URL: https://chaldal.com/onion-red-imported-1-kg
+LastUpdated: 2025-04-11
+Previous prices:
+2025-03-31: 65
+
+===========
+SKU Name: Green Capsicum ± 15 gm
+Pack Size: 300 gm
+MRP: 105.0
+Selling Price: 99.0
+Discount: 0.06
+Product URL: https://chaldal.com/green-capsicum-300-gm
+LastUpdated: 2025-04-11
+Previous prices:
+2025-03-31: 65
+
+===========

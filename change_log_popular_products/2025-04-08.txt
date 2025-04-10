@@ -1,0 +1,128 @@
+SKU Name: Lal Peyaj (Onion Red Imported) ± 50 gm
+Pack Size: 1 kg
+MRP: 65.0
+Selling Price: 55.0
+Product URL: https://chaldal.com/onion-red-imported-1-kg
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 65
+2025-04-04: 59
+2025-04-06: 55
+2025-04-07: 69
+
+===========
+SKU Name: Chinigura Rice Premium
+Pack Size: 1 kg
+MRP: 145.0
+Selling Price: 139.0
+Product URL: https://chaldal.com/chinigura-rice-premium-1-kg
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 139
+2025-04-06: 149
+
+===========
+SKU Name: Shagor Kola (Banana Sagor)
+Pack Size: 4 pcs
+MRP: 49.0
+Selling Price: 49.0
+Product URL: https://chaldal.com/banana-sagor-4-pcs
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 49
+2025-04-07: 55
+
+===========
+SKU Name: Deshi Shosha (Local Cucumber) ± 25 gm
+Pack Size: 500 gm
+MRP: 40.0
+Selling Price: 35.0
+Product URL: https://chaldal.com/deshi-cucumber-net-weight-20-gm-500-gm
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 55
+2025-04-04: 39
+
+===========
+SKU Name: Lomba Lebu (Long Lemon)
+Pack Size: 4 pcs
+MRP: 59.0
+Selling Price: 59.0
+Product URL: https://chaldal.com/long-big-lemon-4-pcs
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 79
+2025-04-04: 69
+2025-04-07: 65
+
+===========
+SKU Name: Deshi Ada (Local Ginger) ± 25 gm
+Pack Size: 500 gm
+MRP: 119.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/deshi-ada-local-ginger-25-gm-500-gm
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 69
+2025-04-04: 75
+2025-04-06: 69
+2025-04-07: 75
+
+===========
+SKU Name: Badhakopi (Cabbage)
+Pack Size: each
+MRP: 50.0
+Selling Price: 45.0
+Product URL: https://chaldal.com/cabbage-1-pcs
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 49
+2025-04-06: 45
+2025-04-07: 49
+
+===========
+SKU Name: Green Capsicum ± 15 gm
+Pack Size: 300 gm
+MRP: 105.0
+Selling Price: 99.0
+Product URL: https://chaldal.com/green-capsicum-300-gm
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 65
+2025-04-04: 69
+2025-04-06: 99
+2025-04-07: 89
+
+===========
+SKU Name: Kacha Pepe (Green Papaya) ± 70 gm
+Pack Size: 1.4 kg
+MRP: 119.0
+Selling Price: 85.0
+Product URL: https://chaldal.com/papaya-14-kg
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 75
+2025-04-04: 99
+
+===========
+SKU Name: Miniket Rice Premium (Boiled) ± 200 gm
+Pack Size: 25 kg
+MRP: 2250.0
+Selling Price: 2229.0
+Product URL: https://chaldal.com/miniket-rice-premium-boiled-200-gm-25-kg
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 2179
+2025-04-06: 2219
+
+===========
+SKU Name: Miniket Rice Standard (Boiled) ± 200 gm
+Pack Size: 25 kg
+MRP: 30.0
+Selling Price: 30.0
+Product URL: https://chaldal.com/miniket-rice-standard-boiled-200-gm-25-kg
+LastUpdated: 2025-04-08
+Previous prices:
+2025-03-31: 1989
+
+===========

@@ -1,0 +1,157 @@
+SKU Name: Starship Fortified Soyabean Oil
+Pack Size: 5 ltr
+MRP: 852.0
+Selling Price: 839.0
+Product URL: https://chaldal.com/starship-fortified-soyabean-oil-5-ltr
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 852
+
+===========
+SKU Name: Nazirshail Rice Premium (Half Boiled) ± 200 gm
+Pack Size: 25 kg
+MRP: 2350.0
+Selling Price: 2099.0
+Product URL: https://chaldal.com/nazirshail-rice-premium-half-boiled-200-gm-25-kg
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 2219
+
+===========
+SKU Name: Chicken Eggs (Layer)
+Pack Size: 12 pcs
+MRP: 129.0
+Selling Price: 125.0
+Product URL: https://chaldal.com/tatka-egg-pack-12-pcs
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 125
+2025-04-01: 129
+
+===========
+SKU Name: Red Tomato ± 25 gm
+Pack Size: 500 gm
+MRP: 25.0
+Selling Price: 19.0
+Product URL: https://chaldal.com/red-tomato-500-gm
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 19
+2025-04-04: 25
+
+===========
+SKU Name: Lal Peyaj (Onion Red Imported) ± 50 gm
+Pack Size: 1 kg
+MRP: 65.0
+Selling Price: 55.0
+Product URL: https://chaldal.com/onion-red-imported-1-kg
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 65
+2025-04-04: 59
+
+===========
+SKU Name: Roshun (Garlic Imported) ± 25 gm
+Pack Size: 500 gm
+MRP: 125.0
+Selling Price: 119.0
+Product URL: https://chaldal.com/garlic-roshun-premium-500-gm-2
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 119
+2025-04-04: 109
+
+===========
+SKU Name: Chinigura Rice Premium
+Pack Size: 1 kg
+MRP: 149.0
+Selling Price: 149.0
+Product URL: https://chaldal.com/chinigura-rice-premium-1-kg
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 139
+
+===========
+SKU Name: Nazirshail Rice Premium (Half Boiled) ± 50 gm
+Pack Size: 5 kg
+MRP: 489.0
+Selling Price: 459.0
+Product URL: https://chaldal.com/nazirshail-rice-premium-half-boiled-50-gm-5-kg
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 449
+
+===========
+SKU Name: Miniket Rice Premium (Boiled) ± 50 gm
+Pack Size: 5 kg
+MRP: 459.0
+Selling Price: 459.0
+Product URL: https://chaldal.com/miniket-rice-premium-boiled-50-gm-5-kg
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 449
+
+===========
+SKU Name: Deshi Ada (Local Ginger) ± 25 gm
+Pack Size: 500 gm
+MRP: 119.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/deshi-ada-local-ginger-25-gm-500-gm
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 69
+2025-04-04: 75
+
+===========
+SKU Name: Badhakopi (Cabbage)
+Pack Size: each
+MRP: 50.0
+Selling Price: 45.0
+Product URL: https://chaldal.com/cabbage-1-pcs
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 49
+
+===========
+SKU Name: Green Capsicum ± 15 gm
+Pack Size: 300 gm
+MRP: 139.0
+Selling Price: 99.0
+Product URL: https://chaldal.com/green-capsicum-300-gm
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 65
+2025-04-04: 69
+
+===========
+SKU Name: Boot Dal
+Pack Size: 500 gm
+MRP: 65.0
+Selling Price: 65.0
+Product URL: https://chaldal.com/boot-dal-500-gm
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 69
+
+===========
+SKU Name: Lomba Kalo Begun (Long Brinjal Black) ± 25 gm
+Pack Size: 500 gm
+MRP: 45.0
+Selling Price: 45.0
+Product URL: https://chaldal.com/long-brinjal-black-net-weight-20-gm-500-gm
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 55
+2025-04-04: 49
+
+===========
+SKU Name: Miniket Rice Premium (Boiled) ± 200 gm
+Pack Size: 25 kg
+MRP: 2250.0
+Selling Price: 2219.0
+Product URL: https://chaldal.com/miniket-rice-premium-boiled-200-gm-25-kg
+LastUpdated: 2025-04-06
+Previous prices:
+2025-03-31: 2179
+
+===========

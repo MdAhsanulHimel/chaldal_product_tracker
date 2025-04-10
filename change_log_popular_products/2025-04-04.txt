@@ -1,0 +1,131 @@
+SKU Name: Potato Regular (± 50 gm)
+Pack Size: 1 kg
+MRP: 30.0
+Selling Price: 25.0
+Product URL: https://chaldal.com/potato-alu-1-kg-2
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 24
+
+===========
+SKU Name: Chicken Eggs Layer (White)
+Pack Size: 12 pcs
+MRP: 119.0
+Selling Price: 119.0
+Product URL: https://chaldal.com/chicken-eggs-layer-white-12-pcs
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 119
+2025-04-03: 125
+
+===========
+SKU Name: Lal Peyaj (Onion Red Imported) ± 50 gm
+Pack Size: 1 kg
+MRP: 65.0
+Selling Price: 59.0
+Product URL: https://chaldal.com/onion-red-imported-1-kg
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 65
+
+===========
+SKU Name: Red Tomato ± 25 gm
+Pack Size: 500 gm
+MRP: 30.0
+Selling Price: 25.0
+Product URL: https://chaldal.com/red-tomato-500-gm
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 19
+
+===========
+SKU Name: Roshun (Garlic Imported) ± 25 gm
+Pack Size: 500 gm
+MRP: 119.0
+Selling Price: 109.0
+Product URL: https://chaldal.com/garlic-roshun-premium-500-gm-2
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 119
+
+===========
+SKU Name: Kacha Morich (Green Chilli) ±12 gm
+Pack Size: 250 gm
+MRP: 25.0
+Selling Price: 19.0
+Product URL: https://chaldal.com/green-chilli-250-gm
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 25
+
+===========
+SKU Name: Deshi Shosha (Local Cucumber) ± 25 gm
+Pack Size: 500 gm
+MRP: 50.0
+Selling Price: 39.0
+Product URL: https://chaldal.com/deshi-cucumber-net-weight-20-gm-500-gm
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 55
+
+===========
+SKU Name: Lomba Lebu (Long Lemon)
+Pack Size: 4 pcs
+MRP: 80.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/long-big-lemon-4-pcs
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 79
+
+===========
+SKU Name: Deshi Ada (Local Ginger) ± 25 gm
+Pack Size: 500 gm
+MRP: 129.0
+Selling Price: 75.0
+Product URL: https://chaldal.com/deshi-ada-local-ginger-25-gm-500-gm
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 69
+
+===========
+SKU Name: Green Capsicum ± 15 gm
+Pack Size: 300 gm
+MRP: 100.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/green-capsicum-300-gm
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 65
+
+===========
+SKU Name: Kacha Pepe (Green Papaya) ± 70 gm
+Pack Size: 1.4 kg
+MRP: 115.0
+Selling Price: 99.0
+Product URL: https://chaldal.com/papaya-14-kg
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 75
+
+===========
+SKU Name: Lomba Kalo Begun (Long Brinjal Black) ± 25 gm
+Pack Size: 500 gm
+MRP: 49.0
+Selling Price: 49.0
+Product URL: https://chaldal.com/long-brinjal-black-net-weight-20-gm-500-gm
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 55
+
+===========
+SKU Name: Fulkopi (Cauliflower)
+Pack Size: each
+MRP: 100.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/cauliflower-b-grade-1-pcs-2
+LastUpdated: 2025-04-04
+Previous prices:
+2025-03-31: 55
+
+===========

@@ -1,0 +1,21 @@
+SKU Name: Deshi Peyaj (Local Onion) ± 50 gm
+Pack Size: 1 kg
+MRP: 50.0
+Selling Price: 45.0
+Product URL: https://chaldal.com/onion-local-1-kg-2
+LastUpdated: 2025-04-03
+Previous prices:
+2025-03-31: 45
+2025-04-02: 50
+
+===========
+SKU Name: Chicken Eggs Layer (White)
+Pack Size: 12 pcs
+MRP: 125.0
+Selling Price: 125.0
+Product URL: https://chaldal.com/chicken-eggs-layer-white-12-pcs
+LastUpdated: 2025-04-03
+Previous prices:
+2025-03-31: 119
+
+===========

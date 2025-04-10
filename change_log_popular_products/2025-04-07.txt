@@ -1,0 +1,110 @@
+SKU Name: Starship Fortified Soyabean Oil
+Pack Size: 5 ltr
+MRP: 852.0
+Selling Price: 852.0
+Product URL: https://chaldal.com/starship-fortified-soyabean-oil-5-ltr
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 852
+2025-04-06: 839
+
+===========
+SKU Name: Potato Regular (± 50 gm)
+Pack Size: 1 kg
+MRP: 24.0
+Selling Price: 24.0
+Product URL: https://chaldal.com/potato-alu-1-kg-2
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 24
+2025-04-04: 25
+
+===========
+SKU Name: Lal Peyaj (Onion Red Imported) ± 50 gm
+Pack Size: 1 kg
+MRP: 69.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/onion-red-imported-1-kg
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 65
+2025-04-04: 59
+2025-04-06: 55
+
+===========
+SKU Name: Shagor Kola (Banana Sagor)
+Pack Size: 4 pcs
+MRP: 55.0
+Selling Price: 55.0
+Product URL: https://chaldal.com/banana-sagor-4-pcs
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 49
+
+===========
+SKU Name: Chickpea Flour (Boot Beshon)
+Pack Size: 500 gm
+MRP: 69.0
+Selling Price: 69.0
+Product URL: https://chaldal.com/chick-peas-powder-booter-beshon-450-gm
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 75
+
+===========
+SKU Name: Lomba Lebu (Long Lemon)
+Pack Size: 4 pcs
+MRP: 70.0
+Selling Price: 65.0
+Product URL: https://chaldal.com/long-big-lemon-4-pcs
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 79
+2025-04-04: 69
+
+===========
+SKU Name: Deshi Ada (Local Ginger) ± 25 gm
+Pack Size: 500 gm
+MRP: 119.0
+Selling Price: 75.0
+Product URL: https://chaldal.com/deshi-ada-local-ginger-25-gm-500-gm
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 69
+2025-04-04: 75
+2025-04-06: 69
+
+===========
+SKU Name: Badhakopi (Cabbage)
+Pack Size: each
+MRP: 49.0
+Selling Price: 49.0
+Product URL: https://chaldal.com/cabbage-1-pcs
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 49
+2025-04-06: 45
+
+===========
+SKU Name: Misti Kumra Fali (Sweet Pumpkin Slice) ± 40 gm
+Pack Size: 1 kg
+MRP: 45.0
+Selling Price: 45.0
+Product URL: https://chaldal.com/sweet-pumpkin-1-slice
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 39
+
+===========
+SKU Name: Green Capsicum ± 15 gm
+Pack Size: 300 gm
+MRP: 100.0
+Selling Price: 89.0
+Product URL: https://chaldal.com/green-capsicum-300-gm
+LastUpdated: 2025-04-07
+Previous prices:
+2025-03-31: 65
+2025-04-04: 69
+2025-04-06: 99
+
+===========
